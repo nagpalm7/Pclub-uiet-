@@ -1,0 +1,32 @@
+<% include partials/header %>
+<div class="container">
+<header class="back jumbotron">
+  <div class="container">
+  <h1><strong style="letter-spacing: 0.3em">Programming Club <span style="letter-spacing: 0.5em">Members</span></strong></h1>
+  <p>Feel Free To Contact Us</p>
+</div>
+</header>
+<div class="row" style="display:flex; flex-wrap:wrap;">
+<% members.forEach(function(member){ %>
+  <div class = "members col-md-3 col-sm-6 col-xs-6">
+    <div class="thumbnail">
+      <div class="caption text-center">
+        <h4 class="membername"><%=member.name%></h4>
+      </div>
+        <img style="border-radius: 50%; width:"200px"; height: "200px"; " src="<%=member.image%>" alt="<%=member.name%>">
+        <div class="caption text-center">
+          <a target = "_blank" href="<%=member.github%>"><button type="button" class="btn btn-git"><i class="fa fa-github left"></i> Github</button></a>
+        </div>
+        <div class="caption text-center">
+          <a target = "_blank" href="mailto:<%=member.gmail%>"><button type="button" class="btn btn-gplus"><i class="fa fa-google-plus left"></i> Google +</button></a>
+        </div>
+    </div>
+
+  </div>
+<% }) %>
+</div>
+</div>
+
+
+
+<% include partials/footer %>

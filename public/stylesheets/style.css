@@ -1,0 +1,104 @@
+
+.navbar{
+  background-color: #375A7F;
+  border: 0px;
+}
+body{
+  background-color: #3E3E3E;
+}
+.bottom{
+  background-color: #375A7F;
+  margin-top: 25px;
+}
+.back{
+  font-family: 'VT323', monospace;
+  background-color: #101010;
+  color: #00BC8C;
+  text-align: center;
+}
+.members{
+    background-color: #3E3E3E;
+    font-family: 'VT323', monospace;
+    font-size: 2.0em;
+
+}
+.thumbnail{
+  border: 0px;
+  background-color: #fffaf0;
+
+}
+.resourceIcons{
+  height: 50%;
+  width: 50%;
+}
+.thumbnail{
+  background-color: #333333;
+}
+.membername{
+  color: #00BC8C;
+}
+.about{
+  font-family: 'Slabo 27px', serif;
+  color: #959595;
+  font-size: 40px;
+}
+#pc{
+  color: #00BC8C;
+}
+
+
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #A29FA2;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #fff;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #00BC8C;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}

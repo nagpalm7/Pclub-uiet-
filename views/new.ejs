@@ -1,0 +1,50 @@
+<% include partials/header %>
+
+<div class="container">
+  <div class="row">
+    <h1 style="text-align:center; color:  #00BC8C;">Add New Resource</h1>
+    <div style="width: 30%; margin:30px auto">
+      <form action="/resources" method="post">
+        <div class= "form-group">
+          <input type="email" class="form-control" name="auth[email]"placeholder="Enter email" required>
+        </div>
+        <div class= "form-group">
+          <input type="password" class = "form-control" name="auth[password]" placeholder="Enter Pclub Password" required>
+        </div>
+        <div class= "form-group">
+          <input type="text" class="form-control" name = "resource[name]" placeholder="Enter Resource Name" required>
+        </div>
+        <div class= "form-group">
+          <input type="text" class="form-control" name="resource[url]" placeholder="URL" required>
+        </div>
+        <div class= "form-group">
+          <div class="center-on-page">
+            <div class="select">
+              <select name = "resource[type]" id="slct" required>
+                <option selected>Type</option>
+                <option value="playlist">You Tube</option>
+                <option value="page">Web Page</option>
+                <option value="docs">Docs</option>
+              </select>
+            </div>
+
+</div>
+        </div>
+        <%if(user == "fake"){%>
+          <div class="alert alert-danger" role="alert">
+  <strong>authentication fail! </strong>and try submitting again.
+</div>
+
+        <%}%>
+        <div class="form-group">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </div>
+      </form>
+          <a href="/resources"><button class = "btn btn-secondary btn-lg btn-block ">Go Back</button></a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
