@@ -1,7 +1,7 @@
 # Pclub-uiet-
 install nodejs and mongodb.
 nodejs installation guide: http://blog.teamtreehouse.com/install-node-js-npm-linux
-mongodb installation guide: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/
+mongodb installation guide: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/ make sure to install all the dependencies written in packages.json
 
 open terminal and write:
 mongod --dbpath '''path of your cuurent working directory'''/data/db
